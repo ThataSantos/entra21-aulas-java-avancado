@@ -40,7 +40,7 @@ public class Aula01 {
 			}
 
 		} while (opcao != 0);
-		System.out.println("Obrigado, volse sempre que quiser aprender mais");
+		System.out.println("Obrigado, volte sempre que quiser aprender mais");
 
 	}
 }

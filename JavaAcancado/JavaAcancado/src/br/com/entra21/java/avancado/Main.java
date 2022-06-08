@@ -5,13 +5,11 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 import br.com.entra21.java.avancado.aula01.Aula01;
-import br.com.entra21.java.avancado.aula01.enuns.Enuns;
-import br.com.entra21.java.avancado.aula01.wrappers.Wrappers;
 import br.com.entra21.java.avancado.aula02.Aula02;
 import br.com.entra21.java.avancado.aula03.Aula03;
 import br.com.entra21.java.avancado.aula03.anotacoes.Responsavel;
 import br.com.entra21.java.avancado.aula04.Aula04;
-import br.com.entra21.java.avancado.aula04.Aula04Alunos;
+import br.com.entra21.java.avancado.aula05.Aula05;
 
 public class Main {
 
@@ -38,12 +36,16 @@ public class Main {
 				Aula03.aprender();
 				break;
 			case 4:
-				new Aula04("Aula04 - Collections - SET - HashSet", new ArrayList<>(Arrays.asList("Definir","CRUD"))).aprender();
-				//Aula04Alunos.aprender();
+				new Aula04("Aula04 - Collections - SET - HashSet", new ArrayList<>(Arrays.asList("Definir", "CRUD")))
+						.aprender();
+				// Aula04Alunos.aprender();
 				break;
 			case 5:
-				//new Aula05("Aula05 - Collections - MAP - HashMap", null).aprender();
-				pedirPaciencia();
+
+				new Aula05("Aula05 - Collections - MAP - HashMap",
+						new ArrayList<>(
+								Arrays.asList("Definir", "Create", "Read", "Update", "Delete", "Exemplo prático")))
+						.aprender();
 				break;
 			case 6:
 				pedirPaciencia();
@@ -82,8 +84,8 @@ public class Main {
 		menu += "\n  6 - Aula 06 - Generics";// somente 06
 		menu += "\n  7 - Aula 07 - Exceções e tratamento de erros";// somente 07
 		menu += "\n  8 - Aula 08 - Funções Lambda"; // somente 08
-		menu += "\n  9 - Aula 09 - Funções Lambda"; 
-		menu += "\n 10 - Aula 10 - Funções Lambda"; 
+		menu += "\n  9 - Aula 09 - Funções Lambda";
+		menu += "\n 10 - Aula 10 - Funções Lambda";
 		menu += "\n--------------------------------------------------------";
 		menu += "\n Escolha uma opção para aprender:";
 		menu += "\n--------------------------------------------------------";
