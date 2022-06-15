@@ -3,9 +3,9 @@ package br.com.entra21.java.avancado;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Aula {
+public class Aula {// classe que parece um algoritmo
 
-	Scanner entrada = new Scanner(System.in);
+	private Scanner entrada = new Scanner(System.in);
 	private String titulo;
 	private ArrayList<String> assuntos;
 
@@ -24,7 +24,7 @@ public class Aula {
 				for (int contador = 0; contador < assuntos.size(); contador++) {
 					System.out.println(" " + (contador + 1) + " = " + assuntos.get(contador));
 				}
-			}else {
+			} else {
 				System.out.println("Não há itens especificos para essa aula???");
 			}
 
@@ -39,17 +39,28 @@ public class Aula {
 
 		case -1:
 			System.exit(-1);
-			;
 			break;
 		case 0:
 			System.out.println("Até a proxima!");
 			break;
 		}
+		// um override que aproveita o meu codigo
+		// é como se ele tiveese sido escrito aqui
 		return opcao;
 	}
 
 	public String getTitulo() {
 		return titulo;
 	}
+
+	public Scanner getEntrada() {
+		return entrada;
+	}
+
+	public void setEntrada(Scanner entrada) {
+		this.entrada = entrada;
+	}
+	
+	
 
 }

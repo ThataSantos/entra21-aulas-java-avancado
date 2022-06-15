@@ -1,13 +1,17 @@
 package br.com.entra21.java.avancado.aula04;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class Aula04Alunos {
+import br.com.entra21.java.avancado.Aula;
 
-	static Scanner entrada = new Scanner(System.in);
+public class Aula04Alunos extends Aula {
 
-	public static void aprender() {
+	public Aula04Alunos(String titulo, ArrayList<String> assuntos) {
+		super(titulo, assuntos);
+
+		Scanner entrada = new Scanner(System.in);
 
 		byte opcao;
 		do {

@@ -9,11 +9,18 @@ import br.com.entra21.java.avancado.aula02.Aula02;
 import br.com.entra21.java.avancado.aula03.Aula03;
 import br.com.entra21.java.avancado.aula03.anotacoes.Responsavel;
 import br.com.entra21.java.avancado.aula04.Aula04;
+import br.com.entra21.java.avancado.aula04.Aula04Alunos;
 import br.com.entra21.java.avancado.aula05.Aula05;
+import br.com.entra21.java.avancado.aula06.Aula06;
+import br.com.entra21.java.avancado.aula06.Aula06alunos;
+import br.com.entra21.java.avancado.aula07.Aula07;
+import br.com.entra21.java.avancado.aula08.Aula08;
+import br.com.entra21.java.avancado.aula08.Aula08Alunos;
 
 public class Main {
 
 	static Scanner entrada = new Scanner(System.in);
+	final static int ZERO = 0;
 
 	public static void main(String[] args) {
 
@@ -23,7 +30,7 @@ public class Main {
 			opcao = entrada.nextByte();
 
 			switch (opcao) {
-			case 0:
+			case ZERO:
 				System.out.println("Até a proxima!");
 				break;
 			case 1:
@@ -36,25 +43,53 @@ public class Main {
 				Aula03.aprender();
 				break;
 			case 4:
-				new Aula04("Aula04 - Collections - SET - HashSet", new ArrayList<>(Arrays.asList("Definir", "CRUD")))
-						.aprender();
-				// Aula04Alunos.aprender();
+//				String titulo = "Aula04 - Collections - SET - HashSet";
+//
+//				ArrayList<String> assuntos = new ArrayList<>();
+//				assuntos.add("Definir");
+//				assuntos.add("CRUD");
+//
+//				Aula04 aula04 = new Aula04(titulo, assuntos);
+//				aula04.aprender();
+
+				String titulo = "Aula04Alunos - Collections - SET - HashSet";
+
+				ArrayList<String> assuntos = new ArrayList<>();
+				assuntos.add("Definir");
+				assuntos.add("CRUD");
+
+				Aula04Alunos aula04Alunos = new Aula04Alunos(titulo, assuntos);
+				aula04Alunos.aprender();
 				break;
 			case 5:
-
 				new Aula05("Aula05 - Collections - MAP - HashMap",
 						new ArrayList<>(
 								Arrays.asList("Definir", "Create", "Read", "Update", "Delete", "Exemplo prático")))
 						.aprender();
+
 				break;
 			case 6:
-				pedirPaciencia();
+				// new Aula06("Aula06 - Generics - HashMap(exercicio)",
+				// new ArrayList<>(Arrays.asList("criar interface", "usar
+				// interface"))).aprender();
+
+				new Aula06alunos("Aula06 - Generics - HashMap(exercicio)",
+						new ArrayList<>(Arrays.asList("criar interface", "usar interface"))).aprender();
 				break;
 			case 7:
-				pedirPaciencia();
+				new Aula07("Aula07 - Exceções e tratamento de erros",
+						new ArrayList<>(Arrays.asList("Tratamento de erros", "Obter informações do erro",
+								"Criar e utilizar nossas exceções", "finally é importante?", "Exemplo prático	")))
+						.aprender();
 				break;
 			case 8:
-				pedirPaciencia();
+				// new Aula08("Aula08 - Lambda",
+				// new ArrayList<>(Arrays.asList("Listar", "Filtrar", "Estatisticas",
+				// "Ordenação"))).aprender();
+				
+				new Aula08Alunos("Aula08Alunos - Lambda",
+						new ArrayList<>(Arrays.asList("Listar", "Filtrar", "Estatisticas", "Ordenação"))).aprender();
+
 				break;
 			case 9:
 				pedirPaciencia();
@@ -68,7 +103,7 @@ public class Main {
 				break;
 			}
 
-		} while (opcao != 0);
+		} while (opcao != ZERO);
 		System.out.println("Obrigado, volse sempre que quiser aprender mais sobre JAVA AVANÇADO");
 
 	}
@@ -77,15 +112,13 @@ public class Main {
 		String menu = "Módulo sobre JAVA AVANÇADO:";
 		menu += "\n  0 - Sair";
 		menu += "\n  1 - Aula 01  ENUM e Classes Wrapper";
-		menu += "\n  2 - Aula 02 - Collections - LIST";// somente 02
-		menu += "\n  3 - Aula 03 - Annotations e Datas";// juntos 03
-		menu += "\n  4 - Aula 04 - Collections - SET";// somente 04
-		menu += "\n  5 - Aula 05 - Collections - MAP";// somente 05
-		menu += "\n  6 - Aula 06 - Generics";// somente 06
-		menu += "\n  7 - Aula 07 - Exceções e tratamento de erros";// somente 07
-		menu += "\n  8 - Aula 08 - Funções Lambda"; // somente 08
-		menu += "\n  9 - Aula 09 - Funções Lambda";
-		menu += "\n 10 - Aula 10 - Funções Lambda";
+		menu += "\n  2 - Aula 02 - Collections - LIST";
+		menu += "\n  3 - Aula 03 - Annotations e Datas";
+		menu += "\n  4 - Aula 04 - Collections - SET";
+		menu += "\n  5 - Aula 05 - Collections - MAP";
+		menu += "\n  6 - Aula 06 - Generics";
+		menu += "\n  7 - Aula 07 - Exceções e tratamento de erros";
+		menu += "\n  8 - Aula 08 - Funções Lambda";
 		menu += "\n--------------------------------------------------------";
 		menu += "\n Escolha uma opção para aprender:";
 		menu += "\n--------------------------------------------------------";
