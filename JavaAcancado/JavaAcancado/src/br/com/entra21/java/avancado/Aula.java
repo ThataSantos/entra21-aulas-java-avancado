@@ -60,7 +60,5 @@ public class Aula {// classe que parece um algoritmo
 	public void setEntrada(Scanner entrada) {
 		this.entrada = entrada;
 	}
-	
-	
 
 }

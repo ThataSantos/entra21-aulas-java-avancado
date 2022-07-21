@@ -16,6 +16,7 @@ import br.com.entra21.java.avancado.aula06.Aula06alunos;
 import br.com.entra21.java.avancado.aula07.Aula07;
 import br.com.entra21.java.avancado.aula08.Aula08;
 import br.com.entra21.java.avancado.aula08.Aula08Alunos;
+import br.com.entra21.java.avancado.aula09.Aula09;
 
 public class Main {
 
@@ -86,13 +87,17 @@ public class Main {
 				// new Aula08("Aula08 - Lambda",
 				// new ArrayList<>(Arrays.asList("Listar", "Filtrar", "Estatisticas",
 				// "Ordenação"))).aprender();
-				
+
 				new Aula08Alunos("Aula08Alunos - Lambda",
 						new ArrayList<>(Arrays.asList("Listar", "Filtrar", "Estatisticas", "Ordenação"))).aprender();
 
 				break;
 			case 9:
-				pedirPaciencia();
+				new Aula09("Aula09 - Exercicios",
+						new ArrayList<>(Arrays.asList("Exercicio Wrappers", "Exercicio Enum", "Exercicio Collections",
+								"Exercicio Datas Computador", "Exercicio Datas Humanos", "Exercicio Anotações",
+								"Exercicio Generics", "Exercicio Exeções", "Exercicio Lambda")))
+						.aprender();
 				break;
 			case 10:
 				pedirPaciencia();
@@ -119,6 +124,7 @@ public class Main {
 		menu += "\n  6 - Aula 06 - Generics";
 		menu += "\n  7 - Aula 07 - Exceções e tratamento de erros";
 		menu += "\n  8 - Aula 08 - Funções Lambda";
+		menu += "\n  9 - Aula 09 - Exercios";
 		menu += "\n--------------------------------------------------------";
 		menu += "\n Escolha uma opção para aprender:";
 		menu += "\n--------------------------------------------------------";
