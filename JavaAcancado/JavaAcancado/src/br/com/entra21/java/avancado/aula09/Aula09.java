@@ -23,29 +23,18 @@ public class Aula09 extends Aula {
 			break;
 
 		case 2:
-
+			Enum.practicingEnum();
 			break;
 		case 3:
-
+			Collections.practicingCollecntions();
 			break;
 		case 4:
-
+			Data.praticingData();
 			break;
 		case 5:
-
+			Data.computador();
 			break;
-		case 6:
-
-			break;
-		case 7:
-
-			break;
-		case 8:
-
-			break;
-		case 9:
-
-			break;
+			
 
 		}
 		return opcao;
